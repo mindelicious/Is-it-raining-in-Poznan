@@ -12,62 +12,37 @@ import SwiftyJSON
 
 class WeeklyWeather {
     
-    var _temperature: Double!
-    var _pressure: Int!
-    var _condition: Int!
-    var _weatherIcon: String!
-    var _date: Date!
+    var temperature: Double
+    var pressure: Double
+    var weatherIcon: String
+    var date: Date
+    var humidity: Int
+    var minTemp: Double
+    var maxTemp: Double
+    var wind: Double
+    var windDir: Double
     
-    
-    var temperature: Double {
-        if _temperature == nil {
-            _temperature = 0
-        }
-        return _temperature
-    }
-    
-    var pressure: Int {
-        if _pressure == nil {
-            _pressure = 666
-        }
-        return _pressure
-    }
-    var condition: Int {
-        if _condition == nil {
-            _condition = 666
-        }
-        return _condition
-    }
-    
-    var weatherIcon: String {
-        guard _weatherIcon == nil else {
-            _weatherIcon = ""
-            return _weatherIcon
-        }
-        return _weatherIcon
-    }
-    
-    var date: Date {
-        guard _date == nil else {
-            _date = Date()
-            return _date
-        }
-        return _date
-    }
     
     init(weatherDictionary: Dictionary<String, AnyObject>) {
         
         let json = JSON(weatherDictionary)
-        print(json)
-        self._temperature = temperatureInCelsius(temperature: json["temp"]["day"].double)
-        self._pressure = json["pressure"].intValue
-        self._weatherIcon = json["weather"][0]["icon"].stringValue
+    
+        self.temperature = temperatureInCelsius(temperature: json["temp"]["day"].doubleValue)!
+        self.pressure = json["pressure"].doubleValue
+        self.weatherIcon = json["weather"][0]["icon"].stringValue
+        self.humidity = json["humidity"].intValue
+        self.minTemp = temperatureInCelsius(temperature: json["temp"]["min"].doubleValue)!
+        self.maxTemp = temperatureInCelsius(temperature: json["temp"]["max"].doubleValue)!
+        self.wind = windMeterToKm(wind: json["speed"].doubleValue)!
+        self.windDir = json["deg"].doubleValue
         if let date = json["dt"].double {
             let rawDate = Date(timeIntervalSince1970: date)
             let dateFormatter = DateFormatter()
             dateFormatter.dateStyle = .medium
             
-            self._date = rawDate
+            self.date = rawDate
+        } else {
+         self.date = Date()
         }
         
     }
@@ -85,9 +60,6 @@ class WeeklyWeather {
                 
                 if let dictionary = result.value as? Dictionary<String, AnyObject> {
                     if let list = dictionary["list"] as? [Dictionary<String, AnyObject>] {
-                        
-                        print("number of days:", list.count)
-                        
                         for item in list {
                             let forecast = WeeklyWeather(weatherDictionary: item)
                             forecastArray.append(forecast)

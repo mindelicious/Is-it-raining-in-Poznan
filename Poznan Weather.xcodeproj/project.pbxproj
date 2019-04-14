@@ -10,13 +10,17 @@
 		C4D9D30AA18841948E88CECE /* Pods_Poznan_Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7719BED2741CAE5AAC06F8F /* Pods_Poznan_Weather.framework */; };
 		C917AC3B225E0E8A00A1828A /* ConvertTempToCelsius.swift in Sources */ = {isa = PBXBuildFile; fileRef = C917AC3A225E0E8A00A1828A /* ConvertTempToCelsius.swift */; };
 		C917AC3F225E7B7700A1828A /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C917AC3E225E7B7700A1828A /* DateExtension.swift */; };
+		C917AC41225EFDE600A1828A /* SingleDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C917AC40225EFDE600A1828A /* SingleDayViewController.swift */; };
+		C917AC43225F5BD900A1828A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C917AC42225F5BD900A1828A /* Assets.xcassets */; };
 		C91ED310223CD5C500DE6D9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91ED30F223CD5C500DE6D9E /* AppDelegate.swift */; };
 		C91ED312223CD5C500DE6D9E /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91ED311223CD5C500DE6D9E /* WeatherViewController.swift */; };
 		C91ED315223CD5C500DE6D9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91ED313223CD5C500DE6D9E /* Main.storyboard */; };
-		C91ED317223CD5C600DE6D9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91ED316223CD5C600DE6D9E /* Assets.xcassets */; };
 		C91ED31A223CD5C600DE6D9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91ED318223CD5C600DE6D9E /* LaunchScreen.storyboard */; };
 		C91ED326223D954800DE6D9E /* WeatherViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91ED325223D954700DE6D9E /* WeatherViewCell.swift */; };
 		C924E25E2257E973004777B1 /* WeeklyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924E25D2257E973004777B1 /* WeeklyWeather.swift */; };
+		C99859C7225FD13A00C87E69 /* SingleDayViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99859C6225FD13A00C87E69 /* SingleDayViewCell.swift */; };
+		C99859C92263573F00C87E69 /* ConvertWindFromMeterToKm.temp_caseinsensitive_rename.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99859C82263573F00C87E69 /* ConvertWindFromMeterToKm.temp_caseinsensitive_rename.swift */; };
+		C99859CB2263C41300C87E69 /* WindDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99859CA2263C41300C87E69 /* WindDirections.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,15 +29,19 @@
 		A7719BED2741CAE5AAC06F8F /* Pods_Poznan_Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Poznan_Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C917AC3A225E0E8A00A1828A /* ConvertTempToCelsius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertTempToCelsius.swift; sourceTree = "<group>"; };
 		C917AC3E225E7B7700A1828A /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		C917AC40225EFDE600A1828A /* SingleDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleDayViewController.swift; sourceTree = "<group>"; };
+		C917AC42225F5BD900A1828A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C91ED30C223CD5C500DE6D9E /* Poznan Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poznan Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91ED30F223CD5C500DE6D9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C91ED311223CD5C500DE6D9E /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		C91ED314223CD5C500DE6D9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C91ED316223CD5C600DE6D9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C91ED319223CD5C600DE6D9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C91ED31B223CD5C600DE6D9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C91ED325223D954700DE6D9E /* WeatherViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewCell.swift; sourceTree = "<group>"; };
+		C91ED325223D954700DE6D9E /* WeatherViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WeatherViewCell.swift; path = ../Controller/WeatherViewCell.swift; sourceTree = "<group>"; };
 		C924E25D2257E973004777B1 /* WeeklyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyWeather.swift; sourceTree = "<group>"; };
+		C99859C6225FD13A00C87E69 /* SingleDayViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SingleDayViewCell.swift; path = ../Controller/SingleDayViewCell.swift; sourceTree = "<group>"; };
+		C99859C82263573F00C87E69 /* ConvertWindFromMeterToKm.temp_caseinsensitive_rename.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertWindFromMeterToKm.temp_caseinsensitive_rename.swift; sourceTree = "<group>"; };
+		C99859CA2263C41300C87E69 /* WindDirections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindDirections.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +97,9 @@
 				C91ED324223D304A00DE6D9E /* Model */,
 				C91ED323223D303F00DE6D9E /* View */,
 				C91ED322223D303400DE6D9E /* Controller */,
-				C91ED316223CD5C600DE6D9E /* Assets.xcassets */,
 				C91ED318223CD5C600DE6D9E /* LaunchScreen.storyboard */,
 				C91ED31B223CD5C600DE6D9E /* Info.plist */,
+				C917AC42225F5BD900A1828A /* Assets.xcassets */,
 			);
 			path = "Poznan Weather";
 			sourceTree = "<group>";
@@ -101,7 +109,7 @@
 			children = (
 				C91ED30F223CD5C500DE6D9E /* AppDelegate.swift */,
 				C91ED311223CD5C500DE6D9E /* WeatherViewController.swift */,
-				C91ED325223D954700DE6D9E /* WeatherViewCell.swift */,
+				C917AC40225EFDE600A1828A /* SingleDayViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -110,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				C91ED313223CD5C500DE6D9E /* Main.storyboard */,
+				C91ED325223D954700DE6D9E /* WeatherViewCell.swift */,
+				C99859C6225FD13A00C87E69 /* SingleDayViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -120,6 +130,8 @@
 				C924E25D2257E973004777B1 /* WeeklyWeather.swift */,
 				C917AC3A225E0E8A00A1828A /* ConvertTempToCelsius.swift */,
 				C917AC3E225E7B7700A1828A /* DateExtension.swift */,
+				C99859C82263573F00C87E69 /* ConvertWindFromMeterToKm.temp_caseinsensitive_rename.swift */,
+				C99859CA2263C41300C87E69 /* WindDirections.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -197,7 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C91ED31A223CD5C600DE6D9E /* LaunchScreen.storyboard in Resources */,
-				C91ED317223CD5C600DE6D9E /* Assets.xcassets in Resources */,
+				C917AC43225F5BD900A1828A /* Assets.xcassets in Resources */,
 				C91ED315223CD5C500DE6D9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,10 +262,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C99859C92263573F00C87E69 /* ConvertWindFromMeterToKm.temp_caseinsensitive_rename.swift in Sources */,
 				C91ED326223D954800DE6D9E /* WeatherViewCell.swift in Sources */,
 				C917AC3F225E7B7700A1828A /* DateExtension.swift in Sources */,
+				C917AC41225EFDE600A1828A /* SingleDayViewController.swift in Sources */,
 				C917AC3B225E0E8A00A1828A /* ConvertTempToCelsius.swift in Sources */,
+				C99859CB2263C41300C87E69 /* WindDirections.swift in Sources */,
 				C91ED312223CD5C500DE6D9E /* WeatherViewController.swift in Sources */,
+				C99859C7225FD13A00C87E69 /* SingleDayViewCell.swift in Sources */,
 				C91ED310223CD5C500DE6D9E /* AppDelegate.swift in Sources */,
 				C924E25E2257E973004777B1 /* WeeklyWeather.swift in Sources */,
 			);

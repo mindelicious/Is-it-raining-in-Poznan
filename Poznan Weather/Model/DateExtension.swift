@@ -9,10 +9,19 @@
 import Foundation
 
 extension Date {
+    
     func dayOfTheWeek() -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "pl_PL_POSIX")
         dateFormatter.dateFormat = "EEEE"
+        
+        return dateFormatter.string(from: self)
+    }
+    
+    func singleDayOfTheWeek() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "pl_PL_POSIX")
+        dateFormatter.dateFormat = "dd MMM EEEE"
         
         return dateFormatter.string(from: self)
     }
