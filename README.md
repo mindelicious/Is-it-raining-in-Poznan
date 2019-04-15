@@ -5,8 +5,8 @@
 
 
 
-[](https://github.com/mindelicious/Is-it-raining-in-Poznan/blob/master/icons/IMG_2218.PNG)
-[](https://github.com/mindelicious/Is-it-raining-in-Poznan/blob/master/icons/IMG_2219.PNG)
+![](https://github.com/mindelicious/Is-it-raining-in-Poznan/blob/master/icons/IMG_2218.PNG)
+![](https://github.com/mindelicious/Is-it-raining-in-Poznan/blob/master/icons/IMG_2219.PNG)
 
 ## How to build
 
