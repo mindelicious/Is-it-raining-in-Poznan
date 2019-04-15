@@ -4,9 +4,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/LFAlertController.svg?style=flat)](http://cocoapods.org/pods/LFAlertController)
 
 
-
-![](https://github.com/mindelicious/Is-it-raining-in-Poznan/blob/master/icons/IMG_2218.PNG)
-![](https://github.com/mindelicious/Is-it-raining-in-Poznan/blob/master/icons/IMG_2219.PNG)
+![](https://github.com/mindelicious/Is-it-raining-in-Poznan/blob/master/icons/readmePhoto.jpg)
 
 ## How to build
 
