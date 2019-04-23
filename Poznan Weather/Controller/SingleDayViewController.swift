@@ -15,8 +15,6 @@ class SingleDayViewController: UIViewController, UICollectionViewDelegate, UICol
     @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var weatherIcon: UIImageView!
     
-    var forecastData = [WeeklyWeather]()
-    
     var forecast: WeeklyWeather? 
     
     override func viewDidLoad() {
