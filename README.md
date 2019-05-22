@@ -6,3 +6,6 @@
 
 ![](https://github.com/mindelicious/Is-it-raining-in-Poznan/blob/master/icons/IMG_2218_iphonexspacegrey_portrait.png)
 ![](https://github.com/mindelicious/Is-it-raining-in-Poznan/blob/master/icons/IMG_2219_iphonexspacegrey_portrait.png)
+
+## What?
+Wheater app of town Poznan. Using Alamofire and swiftyJSON
