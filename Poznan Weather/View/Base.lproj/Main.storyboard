@@ -33,7 +33,7 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </scrollView>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WeatherViewCell" id="Vc3-Cl-wfz" customClass="WeatherViewCell" customModule="Poznan_Weather" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="WeatherViewCell" id="Vc3-Cl-wfz" customClass="WeatherViewCell" customModule="Poznan_Weather" customModuleProvider="target">
                                         <rect key="frame" x="12" y="10" width="351" height="105"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -46,7 +46,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <stackView opaque="NO" contentMode="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rPx-QV-bFV">
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rPx-QV-bFV">
                                                     <rect key="frame" x="9" y="35" width="333" height="50"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pressure" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyA-Cj-hBA">
@@ -130,10 +130,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poznan" translatesAutoresizingMaskIntoConstraints="NO" id="YPM-qg-ZaA" userLabel="Background">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="dYw-z9-g2C" userLabel="Top View" customClass="SingleDayViewCell" customModule="Poznan_Weather" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYw-z9-g2C" userLabel="Top View" customClass="SingleDayViewCell" customModule="Poznan_Weather" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="88" width="375" height="180"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="-56" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="amS-xo-Tw5" userLabel="Left Stack View">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="-56" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="amS-xo-Tw5" userLabel="Left Stack View">
                                         <rect key="frame" x="10" y="0.0" width="187" height="180"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poznań" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foQ-79-9oR">
@@ -154,7 +154,7 @@
                                             <constraint firstAttribute="width" constant="187" id="lQv-dz-xwZ"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="-74" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yZu-Mj-a6w" userLabel="Right Stack View" customClass="Sin">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="-74" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yZu-Mj-a6w" userLabel="Right Stack View" customClass="Sin">
                                         <rect key="frame" x="188" y="0.0" width="187" height="180"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ed-am-cNc" userLabel="temp">
@@ -163,7 +163,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10d" translatesAutoresizingMaskIntoConstraints="NO" id="lVn-XV-jvS">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10d" translatesAutoresizingMaskIntoConstraints="NO" id="lVn-XV-jvS">
                                                 <rect key="frame" x="77.666666666666686" y="50.666666666666657" width="32" height="129.33333333333334"/>
                                             </imageView>
                                         </subviews>
@@ -201,7 +201,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </scrollView>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SingleDayCell" id="0ev-tQ-0tZ" customClass="SingleDayViewCell" customModule="Poznan_Weather" customModuleProvider="target">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="SingleDayCell" id="0ev-tQ-0tZ" customClass="SingleDayViewCell" customModule="Poznan_Weather" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="174" height="201"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -298,7 +298,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eHL-LN-vPQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3290" y="125"/>
+            <point key="canvasLocation" x="3545" y="125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JoG-TF-Bhn">

@@ -15,9 +15,7 @@ class SingleDayViewController: UIViewController, UICollectionViewDelegate, UICol
     @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var weatherIcon: UIImageView!
     
-    var forecastData = [WeeklyWeather]()
-    
-    var forecast: WeeklyWeather? 
+    var forecast: WeeklyWeather?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +31,6 @@ class SingleDayViewController: UIViewController, UICollectionViewDelegate, UICol
         
     }
   
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4
         

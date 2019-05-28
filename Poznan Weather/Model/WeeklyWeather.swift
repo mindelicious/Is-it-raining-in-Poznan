@@ -23,7 +23,7 @@ class WeeklyWeather {
     var windDir: Double
     
     
-    init(weatherDictionary: Dictionary<String, AnyObject>) {
+    init(weatherDictionary: [String:Any]) {
         
         let json = JSON(weatherDictionary)
     
@@ -58,8 +58,8 @@ class WeeklyWeather {
             
             if result.isSuccess {
                 
-                if let dictionary = result.value as? Dictionary<String, AnyObject> {
-                    if let list = dictionary["list"] as? [Dictionary<String, AnyObject>] {
+                if let dictionary = result.value as? [String:Any] {
+                    if let list = dictionary["list"] as? [[String:Any]] {
                         for item in list {
                             let forecast = WeeklyWeather(weatherDictionary: item)
                             forecastArray.append(forecast)

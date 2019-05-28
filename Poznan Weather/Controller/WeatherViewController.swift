@@ -67,7 +67,7 @@ class WeatherViewController: UIViewController, UICollectionViewDelegate, UIColle
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let weather = forecastData[indexPath.row]
         self.weatherToSend = weather
-        performSegue(withIdentifier: "WeeklyToDaily", sender: weather)
+        performSegue(withIdentifier: "WeeklyToDaily", sender: weather) 
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
